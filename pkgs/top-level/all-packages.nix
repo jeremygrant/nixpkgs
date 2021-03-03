@@ -11422,8 +11422,8 @@ in
     ruby_2_6
     ruby_2_7;
 
-  ruby = ruby_2_6;
-  rubyPackages = rubyPackages_2_6;
+  ruby = ruby_2_5;
+  rubyPackages = rubyPackages_2_5;
 
   rubyPackages_2_5 = recurseIntoAttrs ruby_2_5.gems;
   rubyPackages_2_6 = recurseIntoAttrs ruby_2_6.gems;
