@@ -5827,6 +5827,11 @@ in {
 
   pylint = callPackage ../development/python-modules/pylint { };
 
+  pyobjc = if stdenv.isDarwin then
+    callPackage ../development/python-modules/pyobjc { }
+  else
+    throw "pyobjc can only be built on Mac OS";
+
   pylint-plugin-utils = callPackage ../development/python-modules/pylint-plugin-utils { };
 
   pylitterbot = callPackage ../development/python-modules/pylitterbot { };

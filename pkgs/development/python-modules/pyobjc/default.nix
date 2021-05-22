@@ -6,7 +6,7 @@ buildPythonPackage rec {
 
   # Gives "No matching distribution found for
   # pyobjc-framework-Collaboration==4.0b1 (from pyobjc==4.0b1)"
-  disabled = isPy3k;
+  disabled = isPy2k;
 
   src = fetchPypi {
     inherit pname version;
